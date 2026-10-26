@@ -167,7 +167,7 @@ const $=id=>document.getElementById(id), get=k=>{try{return JSON.parse(localStor
 const keys={visitors:'asiya_portal_visitors_v1',books:'asiya_portal_books_v1',booking:'asiya_portal_booking_v1',programs:'asiya_portal_programs_v1',beneficiary:'asiya_portal_services_v1',group:'asiya_portal_group_v1',committee:'asiya_portal_committee_v1'};
 
 /* ===== الربط بالسجل المركزي (Google Apps Script الخاص بمدرسة آسية) ===== */
-const API_URL='https://script.google.com/macros/s/AKfycbyz9YRFD7kbNQa_vNUW5TCN9KsRC1tfQzl9otzA1jmKAvG4U8ZqL4UE-kk5NStNMhM/exec'; // ← ضعي هنا رابط تطبيق الويب (ينتهي بـ /exec). إذا تُرك فارغًا تعمل البوابة محليًا داخل المتصفح فقط.
+const API_URL='https://script.google.com/macros/s/AKfycbyaL8Qo316c-E2iMNV6nLeHYovLohz1vFWuM3UihIROV5AeXaj03DVra4Wp-nPj_QKI-A/exec'; // ← ضعي هنا رابط تطبيق الويب (ينتهي بـ /exec). إذا تُرك فارغًا تعمل البوابة محليًا داخل المتصفح فقط.
 const LOCAL_ADMIN_PIN='1981'; // يُستخدم فقط عند عدم ضبط API_URL؛ مع الربط يتم التحقق من الرقم السري في السكربت.
 const MSG_KEY='asiya_portal_messages_v1',OUTBOX_KEY='asiya_portal_outbox_v1';
 const colByKey={};Object.entries(keys).forEach(([c,k])=>colByKey[k]=c);colByKey[MSG_KEY]='messages';
